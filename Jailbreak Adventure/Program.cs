@@ -12,7 +12,7 @@
 
             int number = int.Parse(Console.ReadLine());
 
-            string action = "";
+            
 
             if (number == 1)
             {
@@ -24,7 +24,42 @@
                 Console.ReadLine();
                 Console.WriteLine("You want to steal a keycard of a cop.");
                 Console.WriteLine("What are you gonna do?");
+
+                string action = Console.ReadLine();
+
+                if (action == "walk")
+                {
+                    Console.WriteLine("You walked into the cop. The cop saw you try to steal the keycard.");
+                    Console.ReadLine();
+                    Console.WriteLine("As punishedment you are back in your cel.");
+                    Console.ReadLine();
+                }
+                if (action == "run")
+                {
+                    Console.WriteLine("You ran into the cop. You were so fast that the cop didn't know you stole his keycard.");
+                    Console.ReadLine();
+                    Console.WriteLine("You are running away with the keycard.");
+                    Console.ReadLine();
+                    Console.WriteLine("The cop is chasing you.");
+                    Console.WriteLine("What are you gonna do?");
+                }
+                if (action == "punch")
+                {
+                    Console.WriteLine("You tried to punch the cop. Too bad the cop dodged it. You are arrested.");
+                    Console.ReadLine();
+                    Console.WriteLine("As punishedment you are back in your cel.");
+                    Console.ReadLine();
+                }
+                if (action == "kick")
+                {
+                    Console.WriteLine("You kicked the cop knock out and ran away with the keycard.");
+                    Console.ReadLine();
+                    Console.WriteLine("Other cops saw it and run to you.");
+                    Console.WriteLine("What are you gonna do?");
+                    Console.ReadLine();
+                }
                 Console.ReadLine();
+                
 
             }
             if (number == 2)
