@@ -11,12 +11,23 @@
             Console.WriteLine("Type 2 for options to see the options you can use.");
 
             int number = int.Parse(Console.ReadLine());
+            string walk;
+            string run;
+            string punch;
+            string kick;
 
             if (number == 1)
             {
                 Console.WriteLine("Welcome to Jailbreak to start this game you have to escape prison!!");
                 Console.ReadLine();
                 Console.WriteLine("Your first goal is to escape the prison.");
+                Console.ReadLine();
+                Console.WriteLine("You are in the yard of the prison.");
+                Console.ReadLine();
+                Console.WriteLine("You want to steal a keycard of a cop.");
+                Console.WriteLine("What are you gonna do?");
+                Console.ReadLine();
+
             }
             if (number == 2)
             {
