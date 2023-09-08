@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Jailbreak");
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
             Console.WriteLine("Type 1 to play!!");
