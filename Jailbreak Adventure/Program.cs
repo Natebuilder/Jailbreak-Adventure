@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Jailbreak");
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
             Console.WriteLine("Type 1 to play!!");
@@ -14,6 +15,8 @@
             if (number == 1)
             {
                 Console.WriteLine("Welcome to Jailbreak to start this game you have to escape prison!!");
+                Console.ReadLine();
+                Console.WriteLine("Your first goal is to escape the prison.");
             }
             if (number == 2)
             {
