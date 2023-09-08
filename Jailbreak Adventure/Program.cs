@@ -11,10 +11,8 @@
             Console.WriteLine("Type 2 for options to see the options you can use.");
 
             int number = int.Parse(Console.ReadLine());
-            string walk;
-            string run;
-            string punch;
-            string kick;
+
+            string action = "";
 
             if (number == 1)
             {
