@@ -50,6 +50,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("As result the cop is knockout and you stole his keycard.");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         question2();
                         break;
                     }
@@ -127,6 +128,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("What happen next will release in later version");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         gameTitle();
                         break;
                     }
