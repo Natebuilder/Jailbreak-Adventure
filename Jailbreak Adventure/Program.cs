@@ -63,6 +63,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Meanwhile an another prison got hungry and he ate you!!");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         gameOver2();
                         break;
                     }
@@ -74,6 +75,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("As result you are dead.");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         gameOver();
                         break;
                     }
@@ -102,6 +104,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("the blood spurts out your nose and you are bleeding to dead.");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         gameOver3();
                         break;
                     }
@@ -116,6 +119,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("You can't escape and you are drowning to dead!");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
+                        Console.Clear();
                         gameOver4();
                         break;
                     }
@@ -136,7 +140,7 @@ namespace Jailbreak_Adventure
         }
         public static void gameOver()
         {
-            Console.WriteLine("You are dead that was a disguisting move. Try again");
+            Console.WriteLine("Ewwww that was a disguisting move. Try again");
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
             Console.Clear();
