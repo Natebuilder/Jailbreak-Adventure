@@ -12,6 +12,7 @@ namespace Jailbreak_Adventure
         {
             Console.WriteLine("Ewwww that was a disguisting move. Try again");
             Console.WriteLine("Press enter to continue.");
+            Console.WriteLine("Your final score is: "); 
             Console.ReadLine();
             Console.Clear();
             Program.gameTitle();
@@ -20,6 +21,7 @@ namespace Jailbreak_Adventure
         {
             Console.WriteLine("Well that was a stupid dead someone just ate you like a snack. Try again");
             Console.WriteLine("Press enter to continue.");
+            Console.WriteLine("Your final score is: "); 
             Console.ReadLine();
             Console.Clear();
             Program.gameTitle();
@@ -28,6 +30,7 @@ namespace Jailbreak_Adventure
         {
             Console.WriteLine("Really you really thought that scanning the keycard while running");
             Console.WriteLine("When the cops watching the door you can surpass these cops!! Try again");
+            Console.WriteLine("Your final score is: "); 
             Console.WriteLine("Press enter to continue.");
             Console.ReadLine();
             Console.Clear();
@@ -37,6 +40,7 @@ namespace Jailbreak_Adventure
         {
             Console.WriteLine("Well that was too bad next time don't try to sneak of you bad at it. Try Again");
             Console.WriteLine("Press enter to continue.");
+            Console.WriteLine("Your final score is: "); 
             Console.ReadLine();
             Console.Clear();
             Program.gameTitle();
