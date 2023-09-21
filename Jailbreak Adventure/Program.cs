@@ -13,6 +13,7 @@ namespace Jailbreak_Adventure
         }
         public static void gameTitle()
         {
+            Console.WriteLine($"Score: {Score}\n");
             Console.WriteLine("Jailbreak");
             Console.WriteLine("Press enter to continue.");
             Console.WriteLine("Type instructions to see instructions.");
@@ -29,6 +30,7 @@ namespace Jailbreak_Adventure
             }
             question.question1();
             question.question2();
+            question.question3();
         }
         
     }
