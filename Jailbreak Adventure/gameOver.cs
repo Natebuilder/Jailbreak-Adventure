@@ -92,5 +92,25 @@ namespace Jailbreak_Adventure
             Program.Score = 0;
             Program.gameTitle();
         }
+        public static void gameOver9()
+        {
+            Console.WriteLine("Wow next time think twice before you waste this move.");
+            Console.WriteLine("Press enter to continue.");
+            Console.WriteLine($"Your final score is: {Program.Score}");
+            Console.ReadLine();
+            Console.Clear();
+            Program.Score = 0;
+            Program.gameTitle();
+        }
+        public static void gameOver10()
+        {
+            Console.WriteLine("You shouldn't do that this is just way too stupid.");
+            Console.WriteLine("Press enter to continue.");
+            Console.WriteLine($"Your final score is: {Program.Score}");
+            Console.ReadLine();
+            Console.Clear();
+            Program.Score = 0;
+            Program.gameTitle();
+        }
     }
 }

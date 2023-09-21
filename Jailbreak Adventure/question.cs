@@ -263,5 +263,69 @@ namespace Jailbreak_Adventure
                     }
             }
         }
+        public static void question5()
+        {
+            string choice;
+            Console.WriteLine($"Score: {Program.Score}\n");
+            Console.WriteLine("You are stuck because the cops keep shooting.");
+            Console.WriteLine("While being stuck you found a grenade in the police station.");
+            Console.WriteLine("What are you gonna do with this grenade?");
+            Console.WriteLine("1. Throw it to the cops.");
+            Console.WriteLine("2. Threat the cops with it.");
+            Console.WriteLine("3. Throw it to the stairs.");
+            Console.Write("Choice: ");
+            choice = Console.ReadLine().ToLower();
+            Console.Clear();
+
+            switch (choice)
+            {
+                case "1":
+                case "Throw it to cops":
+                case "Throw cops":
+                    {
+                        Program.Score -= 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You threw the grenade to the cops.");
+                        Console.WriteLine("You are hiding your gun behind your back.");
+                        Console.WriteLine("All the cops are death, but the commisioner shoot you to death.");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver.gameOver9();
+                        break;
+                    }
+                case "2":
+                case "Threat the cops":
+                case "Threat cops":
+                    {
+                        Program.Score -= 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You threat the cops with the grenade.");
+                        Console.WriteLine("One of the cops shoot in the grenade.");
+                        Console.WriteLine("The grenade explode and you death.");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver.gameOver10();
+                        break;
+                    }
+                case "3":
+                case "Throw it to stairs":
+                case "Throw stairs":
+                    {
+                        Program.Score += 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You throw it to the stairs.");
+                        Console.WriteLine("When the grenade explode the wall of the police station breaks.");
+                        Console.WriteLine("Meanwhile you have enough cover, because there is too much smoke.");
+                        Console.WriteLine("You stole a police car and break to the fence!");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        Congrats.congrats();
+                        break;
+                    }
+            }
+        }
     }
 }
