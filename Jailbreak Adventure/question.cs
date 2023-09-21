@@ -148,76 +148,84 @@ namespace Jailbreak_Adventure
         }
         public static void question3()
         {
-            string choice;
-            Console.WriteLine($"Score: {Program.Score}\n");
-            Console.WriteLine("You found a sleeping cop. No other cops knows that.");
-            Console.WriteLine("What are you gonna do to that cop?");
-            Console.WriteLine("1. Steal his clothes and go undercover.");
-            Console.WriteLine("2. Kill the cop and threat the other cops.");
-            Console.WriteLine("3. Steal his gun");
-            Console.Write("Choice: ");
-            choice = Console.ReadLine().ToLower();
+            string choice = "_";
 
-            Console.Clear();
-
-            if (choice == "help")
+            do
             {
-                help.help1();
-                question3();
-            }
+                if (choice != "_")
+                {
+                    Console.WriteLine($"Hey! {choice} is geen geldige keuze!");
+                }
 
-            switch (choice)
-            {
-                case "1":
-                case "Steal clothes from cop":
-                case "Steal clothes":
-                    {
-                        Program.Score -= 100;
-                        Console.WriteLine($"Score: {Program.Score}\n");
-                        Console.WriteLine("You stole the cops clothes.");
-                        Console.WriteLine("The commissioner saw it on security cameras.");
-                        Console.WriteLine("As result you are arrested by the commissioner.");
-                        Console.WriteLine("The commissioner place you to a maximum security prison.");
-                        Console.WriteLine("The new prisoners there don't like you and they drown you in the toilet.");
-                        Console.WriteLine("Press enter to continue!");
-                        Console.ReadLine();
-                        Console.Clear();
-                        gameOver.gameOver5();
-                        break;
-                    }
-                case "2":
-                case "Kill the cop":
-                case "Kill cop":
-                    {
-                        Program.Score -= 100;
-                        Console.WriteLine($"Score: {Program.Score}\n");
-                        Console.WriteLine("You punched the cop's head off.");
-                        Console.WriteLine("You walk to the other cops With a disgusting head.");
-                        Console.WriteLine("You threat like if you don't let me you this will happen to you.");
-                        Console.WriteLine("The other cops aren't scared and that shoot you to death");
-                        Console.WriteLine("Press enter to continue!");
-                        Console.ReadLine();
-                        Console.Clear();
-                        gameOver.gameOver6();
-                        break;
-                    }
-                case "3":
-                case "Steal his gun":
-                case "Steal gun":
-                    {
-                        Program.Score += 100;
-                        Console.WriteLine($"Score: {Program.Score}\n");
-                        Console.WriteLine("You stole the gun from the cop.");
-                        Console.WriteLine("The other 2 cops tried to shoot you down.");
-                        Console.WriteLine("You shoot the 2 cops down and you use your keycard.");
-                        Console.WriteLine("And you go in the police station.");
-                        Console.WriteLine("Press enter to continue!");
-                        Console.ReadLine();
-                        Console.Clear();
-                        question4();
-                        break;
-                    }
-            }
+                Console.WriteLine($"Score: {Program.Score}\n");
+                Console.WriteLine("You found a sleeping cop. No other cops knows that.");
+                Console.WriteLine("What are you gonna do to that cop?");
+                Console.WriteLine("1. Steal his clothes and go undercover.");
+                Console.WriteLine("2. Kill the cop and threat the other cops.");
+                Console.WriteLine("3. Steal his gun");
+                Console.Write("Choice: ");
+                choice = Console.ReadLine().ToLower();
+
+                Console.Clear();
+                if (choice == "help")
+                {
+                    help.help1();
+                    question3();
+                }
+
+                switch (choice)
+                {
+                    case "1":
+                    case "Steal clothes from cop":
+                    case "Steal clothes":
+                        {
+                            Program.Score -= 100;
+                            Console.WriteLine($"Score: {Program.Score}\n");
+                            Console.WriteLine("You stole the cops clothes.");
+                            Console.WriteLine("The commissioner saw it on security cameras.");
+                            Console.WriteLine("As result you are arrested by the commissioner.");
+                            Console.WriteLine("The commissioner place you to a maximum security prison.");
+                            Console.WriteLine("The new prisoners there don't like you and they drown you in the toilet.");
+                            Console.WriteLine("Press enter to continue!");
+                            Console.ReadLine();
+                            Console.Clear();
+                            gameOver.gameOver5();
+                            break;
+                        }
+                    case "2":
+                    case "Kill the cop":
+                    case "Kill cop":
+                        {
+                            Program.Score -= 100;
+                            Console.WriteLine($"Score: {Program.Score}\n");
+                            Console.WriteLine("You punched the cop's head off.");
+                            Console.WriteLine("You walk to the other cops With a disgusting head.");
+                            Console.WriteLine("You threat like if you don't let me go this will happen to you.");
+                            Console.WriteLine("The other cops aren't scared and that shoot you to death");
+                            Console.WriteLine("Press enter to continue!");
+                            Console.ReadLine();
+                            Console.Clear();
+                            gameOver.gameOver6();
+                            break;
+                        }
+                    case "3":
+                    case "Steal his gun":
+                    case "Steal gun":
+                        {
+                            Program.Score += 100;
+                            Console.WriteLine($"Score: {Program.Score}\n");
+                            Console.WriteLine("You stole the gun from the cop.");
+                            Console.WriteLine("The other 2 cops tried to shoot you down.");
+                            Console.WriteLine("You shoot the 2 cops down and you use your keycard.");
+                            Console.WriteLine("And you go in the police station.");
+                            Console.WriteLine("Press enter to continue!");
+                            Console.ReadLine();
+                            Console.Clear();
+                            question4();
+                            break;
+                        }
+                }
+            } while (choice != "1" && choice != "2" && choice != "3");
         }
         public static void question4()
         {
@@ -266,7 +274,7 @@ namespace Jailbreak_Adventure
                     {
                         Program.Score -= 100;
                         Console.WriteLine($"Score: {Program.Score}\n");
-                        Console.WriteLine("You tried to shoot left, but you forgot to pull of the trigger.");
+                        Console.WriteLine("You tried to shoot left, but you forgot to pull off the trigger.");
                         Console.WriteLine("The other cops shoot you death.");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();

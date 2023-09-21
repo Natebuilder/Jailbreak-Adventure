@@ -74,7 +74,7 @@ namespace Jailbreak_Adventure
         public static void gameOver7()
         {
             Console.WriteLine("That was a stupid move");
-            Console.WriteLine("One of the cops are actually crazy\n and he used your death meat to his dog.");
+            Console.WriteLine("One of the cops is actually crazy\n and he used your death meat to his dog.");
             Console.WriteLine("Press enter to continue.");
             Console.WriteLine($"Your final score is: {Program.Score}");
             Console.ReadLine();
