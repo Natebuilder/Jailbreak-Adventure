@@ -31,6 +31,7 @@ namespace Jailbreak_Adventure
             question.question1();
             question.question2();
             question.question3();
+            question.question4();
         }
         
     }

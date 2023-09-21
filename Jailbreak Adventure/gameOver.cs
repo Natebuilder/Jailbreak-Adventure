@@ -71,5 +71,26 @@ namespace Jailbreak_Adventure
             Program.Score = 0;
             Program.gameTitle();
         }
+        public static void gameOver7()
+        {
+            Console.WriteLine("That was a stupid move");
+            Console.WriteLine("One of the cops are actually crazy\n and he used your death meat to his dog.");
+            Console.WriteLine("Press enter to continue.");
+            Console.WriteLine($"Your final score is: {Program.Score}");
+            Console.ReadLine();
+            Console.Clear();
+            Program.Score = 0;
+            Program.gameTitle();
+        }
+        public static void gameOver8()
+        {
+            Console.WriteLine("Well you tried, but maybe you should took a teammate to win this battle.");
+            Console.WriteLine("Press enter to continue.");
+            Console.WriteLine($"Your final score is: {Program.Score}");
+            Console.ReadLine();
+            Console.Clear();
+            Program.Score = 0;
+            Program.gameTitle();
+        }
     }
 }

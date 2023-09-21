@@ -139,7 +139,7 @@ namespace Jailbreak_Adventure
             Console.WriteLine("You found a sleeping cop. No other cops knows that.");
             Console.WriteLine("What are you gonna do to that cop?");
             Console.WriteLine("1. Steal his clothes and go undercover.");
-            Console.WriteLine("2. Kill the cop and threat the other cops..");
+            Console.WriteLine("2. Kill the cop and threat the other cops.");
             Console.WriteLine("3. Steal his gun");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
@@ -171,7 +171,7 @@ namespace Jailbreak_Adventure
                         Program.Score -= 100;
                         Console.WriteLine($"Score: {Program.Score}\n");
                         Console.WriteLine("You punched the cop's head off.");
-                        Console.WriteLine("You walk to the other cops With a disgusting head ");
+                        Console.WriteLine("You walk to the other cops With a disgusting head.");
                         Console.WriteLine("You threat like if you don't let me you this will happen to you.");
                         Console.WriteLine("The other cops aren't scared and that shoot you to death");
                         Console.WriteLine("Press enter to continue!");
@@ -188,12 +188,77 @@ namespace Jailbreak_Adventure
                         Console.WriteLine($"Score: {Program.Score}\n");
                         Console.WriteLine("You stole the gun from the cop.");
                         Console.WriteLine("The other 2 cops tried to shoot you down.");
-                        Console.WriteLine("You shoot the 2 cops down and you use your keycard");
-                        Console.WriteLine("to go in the police station.");
+                        Console.WriteLine("You shoot the 2 cops down and you use your keycard.");
+                        Console.WriteLine("And you go in the police station.");
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
                         question4();
+                        break;
+                    }
+            }
+        }
+        public static void question4()
+        {
+            string choice;
+            Console.WriteLine($"Score: {Program.Score}\n");
+            Console.WriteLine("You are on the 1st floor of the police station.");
+            Console.WriteLine("You are surrounded by 5 cops 2 left 2 right and 1 in front of you.");
+            Console.WriteLine("They give you a chance to surrender.");
+            Console.WriteLine("What is your move in this situation?");
+            Console.WriteLine("1. You surrender.");
+            Console.WriteLine("2. Shoot left.");
+            Console.WriteLine("3. Shoot right.");
+            Console.Write("Choice: ");
+            choice = Console.ReadLine().ToLower();
+            Console.Clear();
+
+            switch (choice)
+            {
+                case "1":
+                case "You surrender":
+                case "You surrender.A":
+                    {
+                        Program.Score += 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You surrender to the cops.");
+                        Console.WriteLine("You are hiding your gun behind your back.");
+                        Console.WriteLine("One of the cops will bring back to your prison.");
+                        Console.WriteLine("Meanwhile before the cop had the chance to grab you you shoot him down.");
+                        Console.WriteLine("The other cops start shooting while you found cover for the bullets.");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        question5();
+                        break;
+                    }
+                case "2":
+                case "Shoot left":
+                case "Shoot left.A":
+                    {
+                        Program.Score -= 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You tried to shoot left, but you forgot to pull of the trigger.");
+                        Console.WriteLine("The other cops shoot you death.");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver.gameOver7();
+                        break;
+                    }
+                case "3":
+                case "Shoot right":
+                case "Shoot right.A":
+                    {
+                        Program.Score -= 100;
+                        Console.WriteLine($"Score: {Program.Score}\n");
+                        Console.WriteLine("You shoot right and you shoot 2 cops in the head.");
+                        Console.WriteLine("You don't have the speed to take down the other cops.");
+                        Console.WriteLine("They shoot you death.");
+                        Console.WriteLine("Press enter to continue!");
+                        Console.ReadLine();
+                        Console.Clear();
+                        gameOver.gameOver8();
                         break;
                     }
             }
