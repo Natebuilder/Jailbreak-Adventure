@@ -22,7 +22,7 @@ namespace Jailbreak_Adventure
         
             while (word == "instructions")
             {
-                Console.WriteLine("You are in prison. You have to escape it.");
+                Console.WriteLine("You are in prison. You have to escape it. If you forgot how to play type help.");
                 Console.WriteLine("Press enter to go back.");
                 Console.ReadLine();
                 Console.Clear();
@@ -32,7 +32,7 @@ namespace Jailbreak_Adventure
             question.question2();
             question.question3();
             question.question4();
+            question.question5();
         }
-        
     }
 }

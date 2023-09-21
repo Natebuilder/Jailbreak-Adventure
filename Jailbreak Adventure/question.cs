@@ -19,8 +19,15 @@ namespace Jailbreak_Adventure
             Console.WriteLine("3. Vomit in his face.");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
+
             Console.Clear();
 
+            if (choice == "help")
+            {
+                help.help1();
+                question1();
+            }
+            
             switch (choice)
             {
                 case "1":
@@ -79,7 +86,14 @@ namespace Jailbreak_Adventure
             Console.WriteLine("3. Try to find an another cop.");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
+
             Console.Clear();
+
+            if (choice == "help")
+            {
+                help.help1();
+                question2();
+            }
 
             switch (choice)
             {
@@ -143,7 +157,14 @@ namespace Jailbreak_Adventure
             Console.WriteLine("3. Steal his gun");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
+
             Console.Clear();
+
+            if (choice == "help")
+            {
+                help.help1();
+                question3();
+            }
 
             switch (choice)
             {
@@ -211,7 +232,14 @@ namespace Jailbreak_Adventure
             Console.WriteLine("3. Shoot right.");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
+
             Console.Clear();
+
+            if (choice == "help")
+            {
+                help.help1();
+                question4();
+            }
 
             switch (choice)
             {
@@ -275,7 +303,14 @@ namespace Jailbreak_Adventure
             Console.WriteLine("3. Throw it to the stairs.");
             Console.Write("Choice: ");
             choice = Console.ReadLine().ToLower();
+
             Console.Clear();
+
+            if (choice == "help")
+            {
+                help.help1();
+                question5();
+            }
 
             switch (choice)
             {
