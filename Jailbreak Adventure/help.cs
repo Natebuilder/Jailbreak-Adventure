@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Jailbreak_Adventure
 {
-    public class help
+    public class Help
     {
-        public static void help1()
+        public static void Help1()
         {
             Console.WriteLine("Each question you have 3 choices. 2 are bad and 1 is good. Choose the good choice or you die.");
             Console.WriteLine("Press enter to go back.");

@@ -8,7 +8,7 @@ namespace Jailbreak_Adventure
 {
     public class Congrats
     {
-        public static void congrats()
+        public static void Congrats1()
         {
             Console.WriteLine("Congratulations you escaped the prison.");
             Console.WriteLine("Thanks for playing my game.");
@@ -17,7 +17,7 @@ namespace Jailbreak_Adventure
             Console.ReadLine();
             Console.Clear();
             Program.Score = 0;
-            Program.gameTitle();
+            Program.GameTitle();
         }
     }
 }

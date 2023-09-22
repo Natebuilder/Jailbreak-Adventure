@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Jailbreak_Adventure
 {
-    public class question
+    public class Question
     {
-        public static void question1()
+        public static void Question1()
         {
             string choice;
             Console.WriteLine($"Score: {Program.Score}\n");
@@ -24,8 +24,8 @@ namespace Jailbreak_Adventure
 
             if (choice == "help")
             {
-                help.help1();
-                question1();
+                Help.Help1();
+                Question1();
             }
             
             switch (choice)
@@ -41,7 +41,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        question2();
+                        Question2();
                         break;
                     }
                 case "2":
@@ -56,7 +56,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver2();
+                        GameOver.GameOver2();
                         break;
                     }
                 case "3":
@@ -70,12 +70,12 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver1();
+                        GameOver.GameOver1();
                         break;
                     }
             }
         }
-        public static void question2()
+        public static void Question2()
         {
             string choice;
             Console.WriteLine($"Score: {Program.Score}\n");
@@ -91,8 +91,8 @@ namespace Jailbreak_Adventure
 
             if (choice == "help")
             {
-                help.help1();
-                question2();
+                Help.Help1();
+                Question2();
             }
 
             switch (choice)
@@ -109,7 +109,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver3();
+                        GameOver.GameOver3();
                         break;
                     }
                 case "2":
@@ -126,7 +126,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver4();
+                        GameOver.GameOver4();
                         break;
                     }
                 case "3":
@@ -140,13 +140,13 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        question3();
+                        Question3();
                         break;
                     }
             }
 
         }
-        public static void question3()
+        public static void Question3()
         {
             string choice = "_";
 
@@ -169,8 +169,8 @@ namespace Jailbreak_Adventure
                 Console.Clear();
                 if (choice == "help")
                 {
-                    help.help1();
-                    question3();
+                    Help.Help1();
+                    Question3();
                 }
 
                 switch (choice)
@@ -189,7 +189,7 @@ namespace Jailbreak_Adventure
                             Console.WriteLine("Press enter to continue!");
                             Console.ReadLine();
                             Console.Clear();
-                            gameOver.gameOver5();
+                            GameOver.GameOver5();
                             break;
                         }
                     case "2":
@@ -205,7 +205,7 @@ namespace Jailbreak_Adventure
                             Console.WriteLine("Press enter to continue!");
                             Console.ReadLine();
                             Console.Clear();
-                            gameOver.gameOver6();
+                            GameOver.GameOver6();
                             break;
                         }
                     case "3":
@@ -221,13 +221,13 @@ namespace Jailbreak_Adventure
                             Console.WriteLine("Press enter to continue!");
                             Console.ReadLine();
                             Console.Clear();
-                            question4();
+                            Question4();
                             break;
                         }
                 }
             } while (choice != "1" && choice != "2" && choice != "3");
         }
-        public static void question4()
+        public static void Question4()
         {
             string choice;
             Console.WriteLine($"Score: {Program.Score}\n");
@@ -245,8 +245,8 @@ namespace Jailbreak_Adventure
 
             if (choice == "help")
             {
-                help.help1();
-                question4();
+                Help.Help1();
+                Question4();
             }
 
             switch (choice)
@@ -265,7 +265,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        question5();
+                        Question5();
                         break;
                     }
                 case "2":
@@ -279,7 +279,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver7();
+                        GameOver.GameOver7();
                         break;
                     }
                 case "3":
@@ -294,12 +294,12 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver8();
+                        GameOver.GameOver8();
                         break;
                     }
             }
         }
-        public static void question5()
+        public static void Question5()
         {
             string choice;
             Console.WriteLine($"Score: {Program.Score}\n");
@@ -316,8 +316,8 @@ namespace Jailbreak_Adventure
 
             if (choice == "help")
             {
-                help.help1();
-                question5();
+                Help.Help1();
+                Question5();
             }
 
             switch (choice)
@@ -334,7 +334,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver9();
+                        GameOver.GameOver9();
                         break;
                     }
                 case "2":
@@ -349,7 +349,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        gameOver.gameOver10();
+                        GameOver.GameOver10();
                         break;
                     }
                 case "3":
@@ -365,7 +365,7 @@ namespace Jailbreak_Adventure
                         Console.WriteLine("Press enter to continue!");
                         Console.ReadLine();
                         Console.Clear();
-                        Congrats.congrats();
+                        Congrats.Congrats1();
                         break;
                     }
             }

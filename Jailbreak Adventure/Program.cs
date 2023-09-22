@@ -9,9 +9,9 @@ namespace Jailbreak_Adventure
         public static int Score = 0;
         static void Main(string[] args)
         {
-            gameTitle();
+            GameTitle();
         }
-        public static void gameTitle()
+        public static void GameTitle()
         {
             Console.WriteLine($"Score: {Score}\n");
             Console.WriteLine("Jailbreak");
@@ -26,13 +26,13 @@ namespace Jailbreak_Adventure
                 Console.WriteLine("Press enter to go back.");
                 Console.ReadLine();
                 Console.Clear();
-                gameTitle();
+                GameTitle();
             }
-            question.question1();
-            question.question2();
-            question.question3();
-            question.question4();
-            question.question5();
+            Question.Question1();
+            Question.Question2();
+            Question.Question3();
+            Question.Question4();
+            Question.Question5();
         }
     }
 }
