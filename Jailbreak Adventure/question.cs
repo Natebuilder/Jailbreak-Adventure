@@ -22,12 +22,14 @@ namespace Jailbreak_Adventure
                 }
                 //This code shows the current score of the player.
                 Console.WriteLine($"Score: {Program.Score}\n");
+
                 //This is the whole question with options the player can choose from.
                 Console.WriteLine("You are in prison. You want to escape it. You see a cop standing in the yard.");
                 Console.WriteLine("What are you gonna do?.");
                 Console.WriteLine("1. Punch him in the face.");
                 Console.WriteLine("2. Act like a scary witch.");
                 Console.WriteLine("3. Vomit in his face.");
+
                 //The player choose an option and it will send to a switch.
                 Console.Write("Choice: ");
                 choice = Console.ReadLine().ToLower();

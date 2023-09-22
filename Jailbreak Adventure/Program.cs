@@ -18,9 +18,11 @@ namespace Jailbreak_Adventure
         {
             //This code shows the current score of the player.
             Console.WriteLine($"Score: {Score}\n");
+
             //This is the game menu.
             Console.WriteLine("Jailbreak");
             Console.WriteLine("Press enter to continue.");
+
             //If you type instructions the string word will go to a while loop.
             Console.WriteLine("Type instructions to see instructions.");
             string word = Console.ReadLine();
@@ -34,6 +36,7 @@ namespace Jailbreak_Adventure
                 Console.WriteLine("Press enter to go back.");
                 Console.ReadLine();
                 Console.Clear();
+
                 //You are send back to the begin screen.
                 GameTitle();
             }
