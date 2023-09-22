@@ -41,6 +41,7 @@ namespace Jailbreak_Adventure
             Program.Score = 0;
             Program.GameTitle();
         }
+
         public static void GameOver4()
         {
             Console.WriteLine("Well that was too bad next time don't try to sneak of you bad at it. Try Again");

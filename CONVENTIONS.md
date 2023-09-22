@@ -37,6 +37,6 @@ public static void GameTitle();
     Console.WriteLine("Press enter to continue.")
     Console.ReadLine();
     Console.Clear();
+    Difficult();
 }
 ```
-
