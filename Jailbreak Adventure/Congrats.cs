@@ -8,6 +8,8 @@ namespace Jailbreak_Adventure
 {
     public class Congrats
     {
+        //This code is pretty simular to the gameover code. The difference is you beat the game instead of lose the game.
+        //The player get a victory message, because the player escaped the prison. After the creator thanks the player for playing.
         public static void Congrats1()
         {
             Console.WriteLine("Congratulations you escaped the prison.");

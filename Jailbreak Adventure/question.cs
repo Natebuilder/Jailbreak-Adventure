@@ -8,39 +8,48 @@ namespace Jailbreak_Adventure
 {
     public class Question
     {
+        //This is the first question you have to find a way to steal a keycard from a cop.
         public static void Question1()
         {
             string choice = "_";
-
+            //This do while loop checks if the player fill 1, 2 or 3 in if it is something else the get a message and get send back to the question.
             do
             {
+                //This is the controller that checks what the player filled.
                 if (choice != "_")
                 {
                     Console.WriteLine($"Hey! {choice} this choice isn't not in the list!");
                 }
+                //This code shows the current score of the player.
                 Console.WriteLine($"Score: {Program.Score}\n");
+                //This is the whole question with options the player can choose from.
                 Console.WriteLine("You are in prison. You want to escape it. You see a cop standing in the yard.");
                 Console.WriteLine("What are you gonna do?.");
                 Console.WriteLine("1. Punch him in the face.");
                 Console.WriteLine("2. Act like a scary witch.");
                 Console.WriteLine("3. Vomit in his face.");
+                //The player choose an option and it will send to a switch.
                 Console.Write("Choice: ");
                 choice = Console.ReadLine().ToLower();
 
                 Console.Clear();
 
+                //This if statement send the player to help it should help the player how to play the game.
                 if (choice == "help")
                 {
                     Help.Help1();
                     Question1();
                 }
 
+                //This switch checks the player's choice. Every question have 2 bad endings and 1 good ending. In this switch option 1 is good and the other 2 are bad.
+                //The first option you are sending to the next question the other 2 you get 2 different gameovers.
                 switch (choice)
                 {
                     case "1":
                     case "Punch him in face":
                     case "Punch face":
                         {
+                            //This gives the player 100 points, because it was the right answer.
                             Program.Score += 100;
                             Console.WriteLine($"Score: {Program.Score}\n");
                             Console.WriteLine("You punched the cop in the face.");
@@ -55,6 +64,7 @@ namespace Jailbreak_Adventure
                     case "Act like a scary witch":
                     case "Scary Witch":
                         {
+                            //This code gives the player -100 points, because it was a wrong answer.
                             Program.Score -= 100;
                             Console.WriteLine($"Score: {Program.Score}\n");
                             Console.WriteLine("You act like a scary witch in front of a cop.");
@@ -70,6 +80,7 @@ namespace Jailbreak_Adventure
                     case "Vomit in face":
                     case "Vomit face":
                         {
+                            //This code gives the player -100 points, because it was a wrong answer.
                             Program.Score -= 100;
                             Console.WriteLine($"Score: {Program.Score}\n");
                             Console.WriteLine("You vomit in the cop's face. He got angry and shoot in your head.");
@@ -81,8 +92,13 @@ namespace Jailbreak_Adventure
                             break;
                         }
                 }
+              //This is a part of the do while loop that checks if the player type 1, 2 or 3 in.
             } while (choice != "1" && choice != "2" && choice != "3");
         }
+
+        //This is the question 2. You stole the keycard and 2 cops are blocking the door by the police station. Find a way to surpass them.
+        //This question and the first question has the same format. The difference is other situation other options. If you want to know
+        //what the code does go back to question 1.
         public static void Question2()
         {
 
@@ -163,6 +179,9 @@ namespace Jailbreak_Adventure
                 }
             } while (choice != "1" && choice != "2" && choice != "3");
         }
+
+        //You made it to the 3rd question. You found a cop that sleeps what are you gonna do?
+        //This question have the same format as the other ones go back to question 1 to know what the code does.
         public static void Question3()
         {
             string choice = "_";
@@ -244,6 +263,9 @@ namespace Jailbreak_Adventure
                 }
             } while (choice != "1" && choice != "2" && choice != "3");
         }
+
+        //Wow question 4 lets go. You are in the police station surrounded by cops. Find a way to win in this situation.
+        //This question have the same format as the other ones go back to question 1 to know what the code does.
         public static void Question4()
         {
             string choice = "_";
@@ -324,6 +346,10 @@ namespace Jailbreak_Adventure
                 }
             } while (choice != "1" && choice != "2" && choice != "3");
         }
+
+        //You made it to the last question. You found cover, but you stuck because the cops keep shooting.
+        //In the police station you found a grenade. Choose the right spot to use this grenade.
+        //This question have the same format as the other ones go back to question 1 to know what the code does.
         public static void Question5()
         {
             string choice = "_";

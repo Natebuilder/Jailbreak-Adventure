@@ -8,6 +8,8 @@ namespace Jailbreak_Adventure
 {
     public class GameOver
     {
+        //Here are all gameovers the code itself of a gameover is the same, but the text in every gameover is different.
+        //You get a gameover based on the question and option you has chosen and you get a final score. Every gameover reset your score and you go back to the menu.
         public static void GameOver1()
         {
             Console.WriteLine("Ewwww that was a disguisting move. Try again");
